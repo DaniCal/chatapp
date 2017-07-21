@@ -55,7 +55,36 @@ class ChatContainer extends React.Component {
         messages: updatedMessages,
         inputValue: ""
       })
+
+      var accessToken = "32d148b6f6274ce68538006ccfbf7d88";
+      var json = '{"query":"' + this.state.inputValue + '","lang":"en","sessionId":"123456"}'
+      var url = "https://api.api.ai/v1/query?v=20170721";
+
+      fetch(url, {
+         method: 'POST',
+         body: json,
+         headers: {
+           Authorization: "Bearer " + accessToken,
+           "Content-Type": "application/json",
+          }
+       })
+        .then(response => response.json())
+        .then(responseData => {
+          console.log(responseData.result.fulfillment.speech)
+          var message = responseData.result.fulfillment.speech
+          var updatedMessages = this.state.messages.slice();
+          updatedMessages.push({msg: message});
+          this.setState({
+            messages:updatedMessages
+          })
+        })
+        .catch(error => {
+          console.log(error)
+        })
+      console.log("component did mount")
     }
+
+
   }
 
   componentDidMount() {
@@ -71,12 +100,17 @@ class ChatContainer extends React.Component {
        headers: {
          Authorization: "Bearer " + accessToken,
          "Content-Type": "application/json",
-
         }
      })
       .then(response => response.json())
       .then(responseData => {
-        console.log(responseData)
+        console.log(responseData.result.fulfillment.speech)
+        var message = responseData.result.fulfillment.speech
+        var updatedMessages = this.state.messages.slice();
+        updatedMessages.push({msg: message});
+        this.setState({
+          messages:updatedMessages
+        })
       })
       .catch(error => {
         console.log(error)

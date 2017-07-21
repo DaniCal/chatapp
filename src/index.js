@@ -3,18 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
-var MESSAGES = [
-  {
-    msg: "Hello",
-    id: 1
-
-  },
-  {
-    msg: "What is your name?",
-    id: 2
-
-  }
-];
+var MESSAGES = [];
 
 
 ReactDOM.render(
