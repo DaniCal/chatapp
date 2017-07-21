@@ -59,6 +59,28 @@ class ChatContainer extends React.Component {
   }
 
   componentDidMount() {
+
+
+    var accessToken = "32d148b6f6274ce68538006ccfbf7d88";
+    var json = '{"query":"focus","lang":"en","sessionId":"123456"}'
+    var url = "https://api.api.ai/v1/query?v=20170721";
+
+    fetch(url, {
+       method: 'POST',
+       body: json,
+       headers: {
+         Authorization: "Bearer " + accessToken,
+         "Content-Type": "application/json",
+
+        }
+     })
+      .then(response => response.json())
+      .then(responseData => {
+        console.log(responseData)
+      })
+      .catch(error => {
+        console.log(error)
+      })
     console.log("component did mount")
   }
 
