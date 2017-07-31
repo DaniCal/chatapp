@@ -4,10 +4,7 @@ import App from './App';
 import './index.css';
 
 
-var MESSAGES = [];
-
-
 ReactDOM.render(
-  <App messages={MESSAGES}/>,
+  <App/>,
   document.getElementById('root')
 );

@@ -1,0 +1,40 @@
+.ChatContainer {
+  overflow-y:auto;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 40%;
+  height: 400px;
+  background: #ffffff;
+  border: 0;
+  padding: 28 18;
+  min-height: 408;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 11px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Message{
+  text-align: left;
+}
+
+.Input{
+  text-align: left;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding-bottom: 10pt;
+  font-size:16px;
+  font-weight: 400;
+}
+
+.Input:focus{
+  outline: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
