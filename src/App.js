@@ -154,83 +154,14 @@ class App extends Component {
       <div className="App">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet"></link>
-        <div className="wrap" >
-          <div className="App-header">
+          <div className="wrap" >
             <img src={logo} className="App-logo" alt="logo" />
-            <h2 className="App-heading">  Make your tech teams high-performing</h2>
-            <h4 className="App-sub-heading">  Increase productivity in your teams by writing effective User Stories.</h4>
-            <a className="button button_start" href="#start" >Start for Free</a>
-            <img src={wireframe} className="wireframe" />
-        </div>
-        <div className="PropositionContainer">
-            <div className="Box PropositionBox">
-              <div>
-                  <img src={valueProposition_1} className="PropositionImage" />
-                  <p className="PropositionTitle">Speed up your development process</p>
-                  <p className="PropositionDescription">Give teams more clarity and guidance through an optimized agile workflow.</p>
-
-              </div>
+            <div className="App-header">
+              <h2 className="App-heading">The easiest way to create user personas</h2>
+              <h4 className="App-sub-heading">Create personas in 5 minutes and export them as a pdf. </h4>
+              <a className="button button_start" href="#start" >Get Started</a>
             </div>
-            <div className="Box PropositionBox">
-              <div>
-                  <img src={valueProposition_2} className="PropositionImage" />
-                    <p className="PropositionTitle">Make your tech teams more happy</p>
-                    <p className="PropositionDescription">Groomly helps you better write user stories to make teams happy.</p>
-              </div>
-            </div>
-            <div className="Box PropositionBox">
-              <div>
-                  <img src={valueProposition_3} className="PropositionImage" />
-                    <p className="PropositionTitle">Speed up your development process</p>
-                    <p className="PropositionDescription">Give teams more clarity and guidance through an optimized agile workflow.</p>
-              </div>
-            </div>
-        </div>
-
-        <h1 className="TestmonialHeading">What Users Say</h1>
-
-      <div className="TestimonialContainer">
-        <div className="Box TestmonialBox">
-          <div>
-            <img src={portrait_1} className="TestimonialPortrait"></img>
-            <p className="TestimonialText" >Groomly has helped us improve our processes and gave us more clarity. And it’s fun using the prouct. Our teams are happy!</p>
           </div>
-          <div>
-            <p className="TestmonialAuthor">Oliver Hookins</p>
-            <p className="TestimonialJob">Manager Engineering, Contentful</p>
-          </div>
-        </div>
-        <div className="Box TestmonialBox">
-          <div>
-            <img src={portrait_2} className="TestimonialPortrait"></img>
-            <p className="TestimonialText" >Groomly has helped us improve our processes and gave us more clarity. And it’s fun using the prouct. Our teams are happy!</p>
-          </div>
-          <div>
-            <p className="TestmonialAuthor">Peter Richard</p>
-            <p className="TestimonialJob">VP Product, Deutsche Bank</p>
-          </div>
-        </div>
-      </div>
-
-    <div className="QuoteContainer">
-
-        <h1 className="TestmonialHeading">Why you should care</h1>
-        <p className="Quote">“The key to building a great product users love is writing effective and clear user stories the whole team understands.”</p>
-        <p className="QuoteAuthor">Jeff sutherland</p>
-        <p className="QuoteAuthorDescription">Co-Creator of Scrum</p>
-  </div>
-
-  <div className="CallToActionContainer" >
-    <p className="CallToAction">Start writing powerful User Stories your team will love</p>
-    <a className="button button_start" href="#start" >Start for Free</a>
-  </div>
-
-
-      </div>
-
-        <footer className="App-footer">
-      		<span className="Footer-Title" >Made with ❤ in Berlin</span>
-      	</footer>
       </div>
     );
   }

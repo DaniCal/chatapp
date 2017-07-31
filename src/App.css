@@ -1,39 +1,71 @@
 
 
 .App {
+  background-image: linear-gradient(14deg, #182ba9, #5dcafd 85%, #5fceff);
+}
+
+.wrap{
+  height: 100vh;
+  margin: 0 auto;
+  background-image: linear-gradient(14deg, #182ba9, #5dcafd 85%, #5fceff);
+}
+
+.App-header {
   text-align: center;
-  background-color: #ffffff;
 }
 
 .App-logo {
   max-height: 50px;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 8%;
+  margin-right: 0;
+  padding: 0 0;
+  display: inline-block;
+  text-align: left!important;
 }
 
-.App-header {
-  height: 90vh;
-  margin: 0 auto;
-  background-color: #6bb272;
-  position: relative;
+.App-heading{
+  padding: 0;
+	font-size: 55px;
+  max-width: 550px;
+	color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
+  margin-bottom: 0;
+  font-weight: 700;
+
 }
 
-.App-footer{
-  background-color: #282828;
-  padding: 40px 0;
-}
-
-.Footer-Title{
+.App-sub-heading{
+  padding: 0;
+  font-size: 25px;
+  max-width: 360px;
+  margin: 0;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: 300;
 }
 
-.wrap {
+.button{
+
+  width: 175px;
+  line-height: 43px;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1f3bb1;
+  padding: 5px 20px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 40px;
   text-align: center;
 }
-
-.App-intro {
-  font-size: large;
-}
-
 .Section{
   width: 100%;
 }
@@ -59,226 +91,6 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-
-
-.App-heading{
-  padding: 0;
-	font-size: 50px;
-  max-width: 550px;
-	color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 0;
-  font-weight: 700;
-
-}
-
-.App-sub-heading{
-  padding: 0;
-  font-size: 20px;
-  max-width: 360px;
-  margin: 0;
-  color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 0;
-  font-weight: 300;
-}
-
-.button{
-  height: 43px;
-  width: 175px;
-  line-height: 43px;
-  display: inline-block;
-  background-color: #2c3e50;
-  color: #ffffff;
-  padding: 0 20px;
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 30px;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.wireframe{
-  max-width: 700px;
-  width: 100%;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right:0;
-  padding: 0;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-}
-
-.Box{
-  margin-top: 20px;
-  margin-bottom: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 0 auto;
-  background-color: #efefef;
-  border-radius: 10px;
-  box-shadow: 0 2px 20px 0 rgba(128, 128, 128, 0.5);
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.PropositionBox{
-  width: 340px;
-  margin-top: 30pt;
-  margin-bottom: 30pt;
-  padding: 30px 20px;
-  display: inline-block;
-
-}
-
-.PropositionImage{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
-  max-width: 200px;
-}
-
-h1{
-  font-size: 40px;
-}
-
-p{
-  color: #190837;
-  margin-left: 0px;
-  margin-top: 5px;
-  margin-right: 0;
-  margin-bottom: 0;
-  padding: 0;
-
-}
-
-.PropositionTitle{
-  font-weight: 700;
-  font-size: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
-
-}
-
-.PropositionDescription{
-  font-weight: 300;
-  font-size: 20px;
-  height: 80px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.TestmonialHeading{
-  margin-top: 80px;
-}
-.TestimonialContainer{
-  margin-top: 80px;
-}
-
-.TestmonialBox{
-  width: 400px;
-  padding: 20px;
-  display: inline-block;
-  text-align: left;
-}
-
-.TestimonialPortrait{
-  max-width: 100px;
-  margin-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  padding: 0;
-  text-align: left;
-  display: inline-block;
-}
-
-.TestimonialText{
-  margin-left: 30px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0;
-  padding: 0;
-  max-width: 260px;
-  display: inline-block;
-  text-align: left;
-  vertical-align: top;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.TestmonialAuthor{
-  margin-left: 0px;
-  margin-top: 40px;
-  margin-right: 0;
-  margin-bottom: 0;
-  text-align: left;
-  padding: 0;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.TestimonialJob{
-  margin-left: 0px;
-  margin-top: 5px;
-  margin-right: 0;
-  margin-bottom: 0;
-  padding: 0;
-  text-align: left;
-  font-weight: 300;
-  font-size: 14px;
-}
-
-.QuoteContainer{
-  background-color: #f1f1f1;
-  margin-top: 30pt;
-  padding: 30px 30%;
-}
-
-.Quote{
-  font-size: 25px;
-  font-weight: 300;
-}
-
-.QuoteAuthor{
-  margin-top: 40px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.QuoteAuthorDescription{
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.CallToActionContainer{
-  background-color: #6bb272;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0 0;
-  padding: 30px 20%;
-}
-
-.CallToAction{
-  color: #ffffff;
-  font-weight: 200;
-  font-size: 25px;
-}
-
-
-
 .ChatContainer {
   overflow-y:auto;
   padding-left: 10pt;
@@ -303,7 +115,14 @@ p{
     font-size: 30px;
     padding-left: 15px;
     padding-right: 15px;
+  }
 
+  .wrap{
+    text-align: center;
+  }
+
+  .App-logo{
+    margin-left: 0;
   }
 
   .App-sub-heading{
@@ -313,46 +132,6 @@ p{
     max-width: 260px;
   }
 
-  .wireframe{
-    width: 80%;
-    max-width: 400px;
-  }
-
   .App-header {
-    height: 90vh;
   }
-
-  .PropositionBox{
-    width: 80%;
-  }
-
-  .PropositionImage{
-    max-width: 150px;
-  }
-
-  .TestmonialBox{
-    width: 70%;
-    text-align: center;
-  }
-
-  .TestimonialPortrait{
-    margin-bottom: 20px;
-  }
-
-  .TestmonialAuthor{
-    text-align: center;
-  }
-
-  .TestimonialJob{
-    text-align: center;
-  }
-
-  .QuoteContainer{
-    padding: 30px 15%;
-  }
-
-  .Quote{
-    font-size: 20px;
-  }
-
 }
