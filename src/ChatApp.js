@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './ChatApp.css';
 
 import ChatContainer from './ChatContainer'
+import PersonaContainer from './PersonaContainer'
   //Component integration
   //<ChatContainer messages={this.props.messages} ></ChatContainer>
 var MESSAGES = []
@@ -12,8 +13,8 @@ class ChatApp extends React.Component {
     return (
       <div className="ChatApp">
         <h2 className="ChatAppHeading" >Create your user persona</h2>
-        <ChatContainer messages={MESSAGES}>
-        </ChatContainer>
+        <PersonaContainer> </PersonaContainer>
+        <ChatContainer messages={MESSAGES}> </ChatContainer>
       </div>
     );
   }
