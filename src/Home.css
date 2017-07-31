@@ -2,17 +2,23 @@
   text-align: center;
 }
 
-.HomeHeading{
+h2{
+  font-weight: 700;
+  font-size: 55px;
+  color: #ffffff;
   padding: 0;
-	font-size: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.HomeHeading{
   max-width: 550px;
-	color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   margin-top: 110px;
   margin-bottom: 0;
-  font-weight: 700;
-
 }
 
 .HomeSubheading{
@@ -45,13 +51,13 @@
 
 
 @media (max-width: 669px){
-  .Home-heading{
+  .HomeHeading{
     font-size: 30px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  .Home-sub-heading{
+  .HomeSubheading{
     font-size: 20px;
     padding-left: 15px;
     padding-right: 15px;

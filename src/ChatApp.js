@@ -11,6 +11,7 @@ class ChatApp extends React.Component {
   render() {
     return (
       <div className="ChatApp">
+        <h2 className="ChatAppHeading" >Create your user persona</h2>
         <ChatContainer messages={MESSAGES}>
         </ChatContainer>
       </div>
