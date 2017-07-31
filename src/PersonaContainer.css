@@ -1,15 +1,17 @@
 .PersonaContainer{
-    padding-left: 10pt;
+    padding-left: 20pt;
     padding-right: 10pt;
+    padding-top: 0;
+    padding-bottom: 0;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 50px;
     margin-right: 50px;
-    width: 20%;
+    width: 230px;
     height: 400px;
     background: #ffffff;
     border: 0;
-    padding: 28 18;
+    text-align: left;
     min-height: 408;
     font-weight: 400;
     font-size: 16px;
@@ -17,4 +19,64 @@
   	background-color: #ffffff;
   	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     position: absolute;
+}
+
+.PersonaElementContainer{
+  display: inline-block;
+  padding-top: 20px;
+
+}
+
+.PersonaName{
+  font-size: 24px;
+}
+
+.PersonaAge{
+  text-align: left;
+  font-size: 12px;
+}
+
+.PersonaImageContainer{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+  padding-top: 20px;
+
+}
+.PersonaImage{
+  text-align: right;
+  display: inline-block;
+  width: 100px;
+}
+
+.Title{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+.Attribute{
+  font-size: 14px;
+  color: #343434;
+  margin-bottom: 10px;
+}
+
+.ExportButton{
+
+  background-color: #346aca;
+  width: 230px;
+  line-height: 43px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 5px 20px;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
 }
