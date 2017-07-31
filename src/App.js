@@ -1,16 +1,40 @@
 import React, { Component } from 'react';
 import logo from './logo.png';
-import wireframe from './wireframe.png'
-
-import portrait_1 from './portrait_1.png'
-import portrait_2 from './portrait_2.png'
-
-import valueProposition_1 from './valueProposition_1.png'
-import valueProposition_2 from './valueProposition_2.png'
-import valueProposition_3 from './valueProposition_3.png'
-
 import './App.css';
 
+import {
+	BrowserRouter,
+	Route
+} from 'react-router-dom';
+
+//App component
+import Home from './Home'
+import ChatApp from './ChatApp'
+
+class App extends Component {
+  //Component integration
+  //<ChatContainer messages={this.props.messages} ></ChatContainer>
+  render() {
+    return (
+      <BrowserRouter>
+
+      <div className="container">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet"></link>
+        <Route exact path="/" component={Home}> </Route>
+        <Route exact path="/start" component={ChatApp}> </Route>
+      </div>
+      </BrowserRouter>
+    );
+  }
+}
+
+App.propTypes = {
+  messages: React.PropTypes.arrayOf(React.PropTypes.shape({
+    msg: React.PropTypes.string.isRequired
+  }))
+};
+
+export default App;
 
 class Message extends React.Component {
   constructor(props) {
@@ -144,33 +168,3 @@ class ChatContainer extends React.Component {
 
   }
 }
-
-class App extends Component {
-  //Component integration
-  //<ChatContainer messages={this.props.messages} ></ChatContainer>
-  render() {
-    return (
-
-      <div className="App">
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet"></link>
-          <div className="wrap" >
-            <img src={logo} className="App-logo" alt="logo" />
-            <div className="App-header">
-              <h2 className="App-heading">The easiest way to create user personas</h2>
-              <h4 className="App-sub-heading">Create personas in 5 minutes and export them as a pdf. </h4>
-              <a className="button button_start" href="#start" >Get Started</a>
-            </div>
-          </div>
-      </div>
-    );
-  }
-}
-
-App.propTypes = {
-  messages: React.PropTypes.arrayOf(React.PropTypes.shape({
-    msg: React.PropTypes.string.isRequired
-  }))
-};
-
-export default App;

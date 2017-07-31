@@ -1,0 +1,136 @@
+
+.Home {
+  background-image: linear-gradient(14deg, #182ba9, #5dcafd 85%, #5fceff);
+}
+
+.wrap{
+  height: 100vh;
+  margin: 0 auto;
+  background-image: linear-gradient(14deg, #182ba9, #5dcafd 85%, #5fceff);
+}
+
+.App-header {
+  text-align: center;
+}
+
+.App-logo {
+  max-height: 50px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 8%;
+  margin-right: 0;
+  padding: 0 0;
+  display: inline-block;
+  text-align: left!important;
+}
+
+.App-heading{
+  padding: 0;
+	font-size: 55px;
+  max-width: 550px;
+	color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
+  margin-bottom: 0;
+  font-weight: 700;
+
+}
+
+.App-sub-heading{
+  padding: 0;
+  font-size: 25px;
+  max-width: 360px;
+  margin: 0;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.button{
+
+  width: 175px;
+  line-height: 43px;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1f3bb1;
+  padding: 5px 20px;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 40px;
+  text-align: center;
+}
+.Section{
+  width: 100%;
+}
+.Message{
+  text-align: left;
+}
+
+.Input{
+  text-align: left;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding-bottom: 10pt;
+  font-size:16px;
+  font-family: Menlo;
+}
+
+.Input:focus{
+  outline: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.ChatContainer {
+  overflow-y:auto;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 50%;
+  height: 400px;
+  background: #ffffff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 28 18;
+  min-height: 408;
+  font-family: Menlo, Monospace, Sans-Serif;
+  font-size: 16px;
+
+}
+
+@media (max-width: 669px){
+  .App-heading{
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .wrap{
+    text-align: center;
+  }
+
+  .App-logo{
+    margin-left: 0;
+  }
+
+  .App-sub-heading{
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 260px;
+  }
+
+  .App-header {
+  }
+}
